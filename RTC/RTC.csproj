@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RTC</RootNamespace>
+    <AssemblyName>RTC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>功能.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Client">
+      <HintPath>..\packages\Opc.Ua.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Configuration">
+      <HintPath>..\packages\Opc.Ua.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\packages\Opc.Ua.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Helper">
+      <HintPath>..\packages\Opc.Ua.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Security.Certificates, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\rct\packages\Opc.Ua.Security.Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="OPCUA_Communication">
+      <HintPath>..\packages\OPCUA_Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc">
+      <HintPath>..\packages\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License">
+      <HintPath>..\packages\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\packages\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS">
+      <HintPath>..\packages\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlSugar">
+      <HintPath>..\packages\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TwinCAT.Ads, Version=4.3.0.0, Culture=neutral, PublicKeyToken=180016cd49e5e8c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\TwinCAT.Ads.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalyDataFrm.Designer.cs">
+      <DependentUpon>AnalyDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AlgorHelper.cs" />
+    <Compile Include="Common\ConfigExcel.cs" />
+    <Compile Include="Common\IpFun.cs" />
+    <Compile Include="Common\LogHelper.cs" />
+    <Compile Include="Common\RobotConfigFun.cs" />
+    <Compile Include="Common\SqlHelper.cs" />
+    <Compile Include="ConfigFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigFrm.Designer.cs">
+      <DependentUpon>ConfigFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryFrm.Designer.cs">
+      <DependentUpon>HistoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfigPara.cs" />
+    <Compile Include="Model\Root.cs" />
+    <Compile Include="Model\StaticCommonVar.cs" />
+    <Compile Include="ProcessFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessFrm.Designer.cs">
+      <DependentUpon>ProcessFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobotsFileManageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotsFileManageFrm.Designer.cs">
+      <DependentUpon>RobotsFileManageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobotsListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotsListFrm.Designer.cs">
+      <DependentUpon>RobotsListFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnalyDataFrm.resx">
+      <DependentUpon>AnalyDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigFrm.resx">
+      <DependentUpon>ConfigFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryFrm.resx">
+      <DependentUpon>HistoryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessFrm.resx">
+      <DependentUpon>ProcessFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RobotsFileManageFrm.resx">
+      <DependentUpon>RobotsFileManageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotsListFrm.resx">
+      <DependentUpon>RobotsListFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="功能.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

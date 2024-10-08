@@ -1,0 +1,1246 @@
+2024-10-05 17:12:31---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:17:24---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:17:47---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:18:51---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:20:25---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:22:22---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:22:32---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:25:05---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:28:04---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:30:39---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:31:22---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:32:50---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:35:09---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:35:58---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:36:27---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:36:53---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:40:49---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 17:41:33---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 18:11:06---初始化失败System.AggregateException: 发生一个或多个错误。 ---> Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能加载文件或程序集“Opc.Ua.Security.Certificates, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“Opc.Ua.Security.Certificates, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+   在 Opc.Ua.X509Utils.VerifyRSAKeyPair(X509Certificate2 certWithPublicKey, X509Certificate2 certWithPrivateKey, Boolean throwOnError)
+   在 Opc.Ua.CertificateFactory.Load(X509Certificate2 certificate, Boolean ensurePrivateKeyAccessible)
+   在 Opc.Ua.CertificateIdentifier.<Find>d__51.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.CertificateValidator.<Update>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.ApplicationConfiguration.<Validate>d__83.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__80.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 System.Threading.Tasks.Task.Wait()
+   在 Opc.Ua.Helper.UaClient..ctor(ApplicationInstance application)
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 3311
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 291
+---> (内部异常 #0) Opc.Ua.ServiceResultException: Configuration file could not be loaded: C:\Users\moumou\source\repos\tcpkuka\RTC\bin\Debug\KukawinOPCUAClient.Config.xml
+未能加载文件或程序集“Opc.Ua.Security.Certificates, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“Opc.Ua.Security.Certificates, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+   在 Opc.Ua.X509Utils.VerifyRSAKeyPair(X509Certificate2 certWithPublicKey, X509Certificate2 certWithPrivateKey, Boolean throwOnError)
+   在 Opc.Ua.CertificateFactory.Load(X509Certificate2 certificate, Boolean ensurePrivateKeyAccessible)
+   在 Opc.Ua.CertificateIdentifier.<Find>d__51.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.CertificateValidator.<Update>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.ApplicationConfiguration.<Validate>d__83.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__80.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Opc.Ua.ApplicationConfiguration.<Load>d__79.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadAppConfig>d__31.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__34.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   在 Opc.Ua.Configuration.ApplicationInstance.<LoadApplicationConfiguration>d__35.MoveNext()<---
+
+2024-10-05 18:13:20---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:13:20---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:24:06---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:24:06---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:27:40---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:27:40---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:28:41---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:28:41---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:35:11---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:35:11---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2742
+2024-10-05 18:54:15---
+成功修改配置文件信息
+
+2024-10-05 18:54:15---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2730
+2024-10-05 18:55:00---
+成功修改配置文件信息
+
+2024-10-05 18:55:00---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2730
+2024-10-05 19:16:27---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.1.10:56789
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2748
+2024-10-05 19:42:05---
+成功修改配置文件信息
+
+2024-10-05 19:42:17---
+成功修改配置文件信息
+
+2024-10-05 19:42:17---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\tcpkuka\RTC\ProcessFrm.cs:行号 2733
