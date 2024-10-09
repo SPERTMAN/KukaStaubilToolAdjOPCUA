@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\processfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\processfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\model\\configpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\model\\configpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcessFrm.cs",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ProcessFrm.cs",
+              "RelativeDocumentMoniker": "RTC\\ProcessFrm.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ProcessFrm.cs",
+              "RelativeToolTip": "RTC\\ProcessFrm.cs",
+              "ViewState": "AQIAALMMAAAAAAAAAAAawOIMAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:46:10.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigPara.cs",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\Model\\ConfigPara.cs",
+              "RelativeDocumentMoniker": "RTC\\Model\\ConfigPara.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\Model\\ConfigPara.cs",
+              "RelativeToolTip": "RTC\\Model\\ConfigPara.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:45:19.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainFrm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\MainFrm.cs",
+              "RelativeDocumentMoniker": "RTC\\MainFrm.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\MainFrm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "RTC\\MainFrm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:07:13.169Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

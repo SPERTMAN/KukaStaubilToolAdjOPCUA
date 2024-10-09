@@ -227,6 +227,7 @@ namespace RTC
         List<double> result = new List<double>();
         private string _BtnImagePath = AppDomain.CurrentDomain.BaseDirectory + "Image\\Lock.png";
         private string _ID;
+        private Process[] _Processes;
         public ProcessFrm()
         {
             InitializeComponent();
@@ -3245,19 +3246,28 @@ namespace RTC
             StartBtn.Enabled = false;
           
             ConfigRunBtn.Enabled = false;
-           
+
             //RtAdjToolGroupBox.Visible = false;
             //RotRealToolGroupBox.Visible = false;
             //MainGrpup.Visible = false;
             //RtProToolGroupBox.Visible = false;
             //CheckLightLab.ForeColor = Color.Gray;
+            string exefile = "";
             #region 数据采集软件
-            string exefile = _pathRoot + @"DataAPP\pci1761_socket_console.exe";
+            if (_cp.ExeType=="PCI")
+            {
+                 exefile = _pathRoot + @"DataAPP\pci1761_socket_console.exe";
+            }
+            else
+            {
+                 exefile = _pathRoot + @"DataAPP\tc3Ads_socket_console.exe";
+            }
+
             //string exefile = _pathRoot + @"DataAPP\tc3Ads_socket_console.exe";
             //判断是否在运行
-            Process[] processes = Process.GetProcessesByName("pci1761_socket_console");
+            _Processes = Process.GetProcessesByName("pci1761_socket_console");
             //Process[] processes = Process.GetProcessesByName("tc3Ads_socket_console");
-            if (processes.Length == 0)
+            if (_Processes.Length == 0)
             {
                 InsetMsg("打开数据采集软件...");
 

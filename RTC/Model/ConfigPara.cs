@@ -22,7 +22,8 @@ namespace Model
 
        
         public string AdminPwd { set; get; }
-        
+
+        public string ExeType { set; get; }
 
         public Robots Robots { set; get; }
 
