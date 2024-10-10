@@ -1,0 +1,27 @@
+2024-10-10 16:45:13---初始化失败System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 RTC.ProcessFrm.Init() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 3002
+   在 RTC.ProcessFrm.ProcessFrm_Load(Object sender, EventArgs e) 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 285
+2024-10-10 17:09:20---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 2738
+2024-10-10 17:10:06---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 2738
+2024-10-10 17:11:17---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 2738
+2024-10-10 17:12:54---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 2738
+2024-10-10 17:13:53---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 2738
+2024-10-10 17:14:49---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 C:\Users\moumou\source\repos\KukaStaubilToolAdjOPCUA\RTC\ProcessFrm.cs:行号 2738

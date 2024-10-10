@@ -138,10 +138,6 @@ namespace RTC
         private bool _OPCUA_GtpperErr;
         private string _RobotSerial;
         private double[] _KukaPoint = new double[8];
-
-        //private double[] _KukaPoint2 = new double[2];
-        //private double[] _KukaPoint3 = new double[2];
-
         #endregion
         //定义矫正后是否继续校验的值
         private bool _CheckContin = false;
@@ -156,8 +152,8 @@ namespace RTC
         private bool _IsWrite;
         private Task _Mianpro;
         private Task _ReadKukapro;
-        private  bool _disable;
-        private  bool _disableMain = true;
+        private bool _disable;
+        private bool _disableMain = true;
         private UaClient _UaClient;
         private ApplicationInstance application;
         private List<NodeId> ltNode = new List<NodeId>();
@@ -183,11 +179,7 @@ namespace RTC
         private List<string> data = new List<string>();
         private DataValue data1;
         private object[] data2;
-        //List<Point3D> upCr = new List<Point3D>(); //定义上圆的point集合
-        //List<Point3D> DownCr = new List<Point3D>();  //定义下圆的point集合
         private byte[] FourBytes = new byte[4];
-        //初始化sqlsguar的连接
-        // private SqlSugarClient db = SqlHelper.ContextMaster("server = 127.0.0.1; Database=tcpdata;Uid=root;Pwd=12345;SslMode=none;CharSet=utf8mb4;");
         private int _MainStep = 0;
         private int _AutoStep = 0;
         private int _RunIndex = 0;
@@ -224,10 +216,13 @@ namespace RTC
         private string _RobotExcelAdress;
         private string _RobotName;
         private ManualResetEvent m = new ManualResetEvent(true); //实例化阻塞事件
-        List<double> result = new List<double>();
+        private List<double> result = new List<double>();
         private string _BtnImagePath = AppDomain.CurrentDomain.BaseDirectory + "Image\\Lock.png";
         private string _ID;
         private Process[] _Processes;
+        private string _ExeFile = "";
+        private Process process;
+        private ProcessStartInfo startInfo;
         public ProcessFrm()
         {
             InitializeComponent();
@@ -245,25 +240,25 @@ namespace RTC
                 }
                 else
                 {
-                    if(_KukaToolDatas != null)
+                    if (_KukaToolDatas != null)
                     {
 
-                    
-                    if (_KukaToolDatas[15] != null && _KukaToolDatas.Count >= 6)
-                    {
-                        result.Add(double.Parse(_KukaToolDatas[CaTool - 1][0]));
-                        result.Add(double.Parse(_KukaToolDatas[CaTool - 1][1]));
-                        result.Add(double.Parse(_KukaToolDatas[CaTool - 1][2]));
-                        result.Add(double.Parse(_KukaToolDatas[CaTool - 1][3]));
-                        result.Add(double.Parse(_KukaToolDatas[CaTool - 1][4]));
-                        result.Add(double.Parse(_KukaToolDatas[CaTool - 1][5]));
-                        return result;
-                    }
-                    else
-                    {
 
-                        return null;
-                    }
+                        if (_KukaToolDatas[15] != null && _KukaToolDatas.Count >= 6)
+                        {
+                            result.Add(double.Parse(_KukaToolDatas[CaTool - 1][0]));
+                            result.Add(double.Parse(_KukaToolDatas[CaTool - 1][1]));
+                            result.Add(double.Parse(_KukaToolDatas[CaTool - 1][2]));
+                            result.Add(double.Parse(_KukaToolDatas[CaTool - 1][3]));
+                            result.Add(double.Parse(_KukaToolDatas[CaTool - 1][4]));
+                            result.Add(double.Parse(_KukaToolDatas[CaTool - 1][5]));
+                            return result;
+                        }
+                        else
+                        {
+
+                            return null;
+                        }
                     }
                     else
                     {
@@ -277,7 +272,7 @@ namespace RTC
                 LogHelper.WriteFile("ReadTool" + ex.ToString());
                 return null;
             }
-           
+
         }
         private void ProcessFrm_Load(object sender, EventArgs e)
         {
@@ -364,7 +359,7 @@ namespace RTC
                                     Invoke(new Action(() =>
                                     {
                                         // SysRunDisable(true);
-                                       
+
 
                                     }));
 
@@ -593,46 +588,42 @@ namespace RTC
                                     _ControlUpdate = true;
                                     _UaClient.ConnectAsync();
                                     Thread.Sleep(2000);
-                               
+
                                     if (_UaClient.Connected && _IsWrite/* && _AutoTest == false*/)
                                     {
                                         tool.ToolA = _KukaTool.A;
                                         tool.ToolB = _KukaTool.B;
                                         tool.ToolC = _KukaTool.C;
 
-                                        if (MessageBox.Show($"矫正后工具abc的值是\r\ntoola:{tool.ToolA},toolb:{ tool.ToolB},toolc:{tool.ToolC}\r\n是否继续矫正XYZ？",
-                                       "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                                        if (!CheckTool(tool))
                                         {
-                                            if (!CheckTool(tool))
+                                            InsetMsg("SETP4:系统错误,计算ABC坐标时计算坐标异常");
+                                            Invoke(new Action(() =>
                                             {
-                                                InsetMsg("SETP4:系统错误,计算ABC坐标时计算坐标异常");
-                                                Invoke(new Action(() =>
-                                                {
-                                                    //textBox3.Text = "提示信息:运行错误";
-                                                    //textBox3.BackColor = Color.Red;
-                                                }));
-                                                _ControlUpdate = true;
-                                                _MainStep = 20;
-                                                break;
-                                            }
-                                            else
+                                                //textBox3.Text = "提示信息:运行错误";
+                                                //textBox3.BackColor = Color.Red;
+                                            }));
+                                            _ControlUpdate = true;
+                                            _MainStep = 20;
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            if (MessageBox.Show($"矫正后工具abc的值是\r\ntoola:{tool.ToolA},toolb:{tool.ToolB},toolc:{tool.ToolC}\r\n是否继续矫正XYZ？",
+                                             "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                                             {
                                                 OpcuaWrite((int)KukaWriteMode.Tool, tool);
                                                 InsetMsg($"SETP5:代入库卡工具坐标");
                                                 _ControlUpdate = true;
                                                 Thread.Sleep(1000);
                                                 _MainStep = 6;
-
                                             }
-                                        }
-                                        else {
-                                            //不进行后面计算 直接从头开始
-                                            _ControlUpdate = true;
-                                            _MainStep = 20;
-                                            break;
+
                                         }
 
-                                       
+
+
 
                                     }
                                     else if (_UaClient.Connected == true && !_IsWrite)
@@ -659,7 +650,7 @@ namespace RTC
                                             _MainStep = 6;
                                         }
                                     }
-                                
+
 
                                     break;
                                 case 16:
@@ -710,52 +701,29 @@ namespace RTC
                                             //写入最后的XYZ值
                                             // _UaClient.ConnectAsync();
                                             //2024-09-27 在矫正过程中增加提示
-                                            if (MessageBox.Show($"矫正后工具XYZ的值是\r\ntoolX:{tool.ToolX},toolY:{ tool.ToolY},toolZ:{tool.ToolZ}\r\n是否继续运行？",
-                                      "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+
+                                            if (_UaClient.Connected && _IsWrite/*&& !_AutoTest*/)
                                             {
-
-                                                if (_UaClient.Connected && _IsWrite/*&& !_AutoTest*/)
+                                                tool.ToolX = xyz.X;
+                                                tool.ToolY = xyz.Y;
+                                                tool.ToolZ = xyz.Z;
+                                                if (!CheckTool(tool))
                                                 {
-                                                    tool.ToolX = xyz.X;
-                                                    tool.ToolY = xyz.Y;
-                                                    tool.ToolZ = xyz.Z;
-                                                    if (!CheckTool(tool))
+                                                    InsetMsg("SETP4:系统错误,计算XYZ坐标时计算坐标异常");
+                                                    Invoke(new Action(() =>
                                                     {
-                                                        InsetMsg("SETP4:系统错误,计算XYZ坐标时计算坐标异常");
-                                                        Invoke(new Action(() =>
-                                                        {
-                                                            //textBox3.Text = "提示信息:运行错误";
-                                                            //textBox3.BackColor = Color.Red;
-                                                        }));
-                                                        _ControlUpdate = true;
-                                                        _MainStep = 20;
-                                                        break;
-                                                    }
-                                                    else
-                                                    {
-                                                        OpcuaWrite((int)KukaWriteMode.Tool, tool);
-                                                        Thread.Sleep(2000);
-                                                        _DataStep = 0;
-                                                        _MainStep = 7;
-                                                    }
-
+                                                        //textBox3.Text = "提示信息:运行错误";
+                                                        //textBox3.BackColor = Color.Red;
+                                                    }));
+                                                    _ControlUpdate = true;
+                                                    _MainStep = 20;
+                                                    break;
                                                 }
-                                                else if (_UaClient.Connected && !_IsWrite)
+                                                else
                                                 {
-                                                    tool = Befortooltemp;
-                                                    if (!CheckTool(tool))
-                                                    {
-                                                        InsetMsg("SETP4:系统错误,计算XYZ坐标时计算坐标异常");
-                                                        Invoke(new Action(() =>
-                                                        {
-                                                            //textBox3.Text = "提示信息:运行错误";
-                                                            //textBox3.BackColor = Color.Red;
-                                                        }));
-                                                        _ControlUpdate = true;
-                                                        _MainStep = 20;
-                                                        break;
-                                                    }
-                                                    else
+                                                    if (MessageBox.Show($"矫正后工具XYZ的值是\r\ntoolX:{tool.ToolX},toolY:{tool.ToolY},toolZ:{tool.ToolZ}\r\n是否继续运行？",
+                                                    "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                                                     {
                                                         OpcuaWrite((int)KukaWriteMode.Tool, tool);
                                                         Thread.Sleep(2000);
@@ -765,17 +733,38 @@ namespace RTC
                                                 }
 
                                             }
-                                            else {
-                                                //跳出循环 不继续执行
-                                                _ControlUpdate = true;
-                                                _MainStep = 20;
-                                                break;
+                                            else if (_UaClient.Connected && !_IsWrite)
+                                            {
+                                                tool = Befortooltemp;
+                                                if (!CheckTool(tool))
+                                                {
+                                                    InsetMsg("SETP4:系统错误,计算XYZ坐标时计算坐标异常");
+                                                    Invoke(new Action(() =>
+                                                    {
+                                                        //textBox3.Text = "提示信息:运行错误";
+                                                        //textBox3.BackColor = Color.Red;
+                                                    }));
+                                                    _ControlUpdate = true;
+                                                    _MainStep = 20;
+                                                    break;
+                                                }
+                                                else
+                                                {
+                                                    OpcuaWrite((int)KukaWriteMode.Tool, tool);
+                                                    Thread.Sleep(2000);
+                                                    _DataStep = 0;
+                                                    _MainStep = 7;
+                                                }
                                             }
-
 
                                         }
 
+
+
                                     }
+
+
+
                                     break;
                                 case 7:
 
@@ -985,7 +974,7 @@ namespace RTC
                                     }
                                     if (_KukaComplete && _OPCUA_STEP == 150)
                                     {
-                                       
+
                                         _MainStep = 13;
                                     }
                                     break;
@@ -1126,85 +1115,85 @@ namespace RTC
                                     break;
                                 case 19:
 
-                                    
-                                        if (_StepOnly)
-                                        {
 
-                                            MainEnd();
-                                            _RobotParaTemp[_RobotsToolIndex] = ConfigPara.DeepClone( _cp.Robots.Tools[_RobotsToolIndex].RobotConfigPara);
-                                            _RobotParaTemp[_RobotsToolIndex].XyzPre_X = _testdata[18].ToString();
-                                            _RobotParaTemp[_RobotsToolIndex].XyzPre_Y = _testdata[19].ToString();
-                                            _RobotParaTemp[_RobotsToolIndex].AbcPre_Z = _testdata[17].ToString();
-                                            _RobotParaTemp[_RobotsToolIndex].AbcPre_Y = _testdata[16].ToString();
-                                            _RobotParaTemp[_RobotsToolIndex].Point1 = _testdata[41].ToString();
-                                            _RobotParaTemp[_RobotsToolIndex].Point2 = _testdata[40].ToString();
-                                            _RobotParaTemp[_RobotsToolIndex].Point3 = _testdata[39].ToString();
-                                            _StepOnly = false;
+                                    if (_StepOnly)
+                                    {
+
+                                        MainEnd();
+                                        _RobotParaTemp[_RobotsToolIndex] = ConfigPara.DeepClone(_cp.Robots.Tools[_RobotsToolIndex].RobotConfigPara);
+                                        _RobotParaTemp[_RobotsToolIndex].XyzPre_X = _testdata[18].ToString();
+                                        _RobotParaTemp[_RobotsToolIndex].XyzPre_Y = _testdata[19].ToString();
+                                        _RobotParaTemp[_RobotsToolIndex].AbcPre_Z = _testdata[17].ToString();
+                                        _RobotParaTemp[_RobotsToolIndex].AbcPre_Y = _testdata[16].ToString();
+                                        _RobotParaTemp[_RobotsToolIndex].Point1 = _testdata[41].ToString();
+                                        _RobotParaTemp[_RobotsToolIndex].Point2 = _testdata[40].ToString();
+                                        _RobotParaTemp[_RobotsToolIndex].Point3 = _testdata[39].ToString();
+                                        _StepOnly = false;
+                                    }
+
+                                    if (_RunIndex > _cp.Robots.Tools.Count)
+                                    {
+                                        OpcuaWrite(7, continueAdj: false);
+                                        if (_OPCUA_STEP == 180)
+                                        {
+                                            _DataStep = 0;
+                                            _CheckSignal = false;
+                                            _RunIndex = 0;
+                                            _MainStep = 1;
+                                            break;
                                         }
 
-                                        if (_RunIndex > _cp.Robots.Tools.Count)
-                                        {
-                                            OpcuaWrite(7, continueAdj: false);
-                                            if (_OPCUA_STEP == 180)
-                                            {
-                                                _DataStep = 0;
-                                                _CheckSignal = false;
-                                                _RunIndex = 0;
-                                                _MainStep = 1;
-                                                break;
-                                            }
+                                    }
+                                    if (_cp.Robots.Tools[_RunIndex].CaToolNum != 0)
+                                    {
 
-                                        }
-                                        if (_cp.Robots.Tools[_RunIndex].CaToolNum != 0)
+                                        OpcuaWrite(7, continueAdj: true);
+                                        if (_OPCUA_STEP == 180)
                                         {
+                                            _DataStep = 0;
+                                            _MainStep = 2;
+                                            _RobotsToolIndex++;
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        OpcuaWrite(7, continueAdj: false);
+                                        if (_OPCUA_STEP == 180)
+                                        {
+                                            if (_AutoTest)
+                                            {
 
-                                            OpcuaWrite(7, continueAdj: true);
-                                            if (_OPCUA_STEP == 180)
-                                            {
-                                                _DataStep = 0;
-                                                _MainStep = 2;
-                                                _RobotsToolIndex++;
-                                                break;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            OpcuaWrite(7, continueAdj: false);
-                                            if (_OPCUA_STEP == 180)
-                                            {
-                                                if (_AutoTest)
+
+
+                                                Invoke(new Action(() =>
                                                 {
-
-                                                
-
-                                                    //Invoke(new Action(() =>
-                                                    //{
-                                                    //    if (MessageBox.Show("是否接受初始化配置运行的值？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-                                                    //    {
-                                                    //        for (int i = 0; i <= _RobotsToolIndex; i++)
-                                                    //        {
-                                                    //            _cp.Robots.Tools[i].RobotConfigPara = _RobotParaTemp[i];
-                                                    //        }
-                                                    //        ConfigExcel.WriteConfig(_cp);
-                                                    //    }
-                                                    //}));
+                                                    if (MessageBox.Show("是否接受初始化配置运行的值？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                                                    {
+                                                        for (int i = 0; i <= _RobotsToolIndex; i++)
+                                                        {
+                                                            _cp.Robots.Tools[i].RobotConfigPara = _RobotParaTemp[i];
+                                                        }
+                                                        ConfigExcel.WriteConfig(_cp);
+                                                    }
+                                                }));
 
 
-                                                }
-                                                _DataStep = 0;
-                                                _CheckSignal = false;
-                                                _AutoTest = false;
-                                                _MainStep = 1;
+                                            }
+                                            _DataStep = 0;
+                                            _CheckSignal = false;
+                                            _AutoTest = false;
+                                            _MainStep = 1;
 
                                             //重复跑
-                                            _AutoTestWrite = false;
-                                            _AutoTest = true;
+                                            //_AutoTestWrite = false;
+                                            //_AutoTest = true;
                                             break;
-                                            }
-
                                         }
-                                        // break;
-                                    
+
+                                    }
+                                    // break;
+
 
                                     break;
                                 //重复以上步骤但是校准tool2的值
@@ -2004,7 +1993,7 @@ namespace RTC
         {
             _disable = false;
             _disableMain = false;
-           StaticCommonVar. _Exit = false;
+            StaticCommonVar._Exit = false;
             Task.Run(() =>
             {
                 while (true)
@@ -2037,7 +2026,7 @@ namespace RTC
             try
             {
 
-                if (_UaClient.Connected&&!StaticCommonVar.RobotChangeOver)
+                if (_UaClient.Connected && !StaticCommonVar.RobotChangeOver)
                 {
                     data.Clear();
                     //配置库卡夹爪
@@ -2518,7 +2507,7 @@ namespace RTC
             Thread.Sleep(100);
             ConfigPara para = ReadConfig(_pathRoot);
             _testdata[47] = $"{para.Robots.Tools[_RobotsToolIndex].CaToolNum}";
-            _testdata[46] = $"{para.Robots.Tools[_RobotsToolIndex].RobotConfigPara.PointHeight}";
+            _testdata[46] = $"{para.Robots.AdjustmentZ}";
             _testdata[45] = _RunIndex;
             _testdata[41] = $"{_KukaPoint[4]},{_KukaPoint[5]}";
             _testdata[40] = $"{_KukaPoint[2]},{_KukaPoint[3]}";
@@ -2548,7 +2537,7 @@ namespace RTC
             InsetMsg($"校准完成");
             _ControlUpdate = true;
             _RunIndex++;
-            
+
         }
 
         private void WriteExl(object[] data, string Filename)
@@ -2560,7 +2549,7 @@ namespace RTC
             //创建一个DataTable
             DataTable dt = new DataTable();
             //data.Add(temp);
-            data[0] = _ID; 
+            data[0] = _ID;
 
             //找到空的格子
             for (int i = 2; i < 10000; i++)
@@ -2597,7 +2586,7 @@ namespace RTC
                 string strFileName = "";
                 string robothis = _RobotExcelAdress;//_cp.Robots.RobotExcelAdress;
                 string robotinit = _RobotExcelAdress;// _cp.Robots.RobotExcelAdress;
-                //生成每日文件
+                                                     //生成每日文件
                 if (_AutoTest == true)
                 {
                     strPath = _pathRoot + $@"DataWrite\{robotinit}\";//+DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
@@ -2722,7 +2711,7 @@ namespace RTC
         {
             try
             {
-                if (_socket.Connected&&!StaticCommonVar.RobotChangeOver)
+                if (_socket.Connected && !StaticCommonVar.RobotChangeOver)
                 {
                     if (_sendCon)
                     {
@@ -2803,7 +2792,7 @@ namespace RTC
                 {
                     //Thread.Sleep(50);
 
-                   // m.WaitOne();
+                    // m.WaitOne();
                     if ((_PLCclient == null || _plcConnected) && _UaClient.Connected &&/* _KukaProName == "TCPMAIN_TOOLZADOWN" &&*/ _KukaSpeed == "10" && _socket.Connected && _KukaProRun)
                     {
                         _SysReady = true;
@@ -2813,34 +2802,36 @@ namespace RTC
                     {
                         _SysReady = false;
                     }
-                    if(StaticCommonVar.RobotChangeOver)
+                    if (StaticCommonVar.RobotChangeOver)
                     {
                         _socket.Close();
                         // _socket.Disconnect(false);
                         _UaClient.DisconnectAsync();
                         m.Reset();
                         //_ReadKukapro.w
-                        
+
                         _cp = ReadConfig(_pathRoot);
                         Thread.Sleep(4000);
                         NoteService = $"opc.tcp://{_cp.Robots.RobotIP}:4840";
-                       
+
                         _UaClient.ServerUrl = NoteService;
                         _UaClient.ConnectAsync();
-                       
+                        ChangeOver();
                         _SocketReset = true;
+
+
                         m.Set();
                         Thread.Sleep(3000);
-                        StaticCommonVar.RobotChangeOver=false;
+                        StaticCommonVar.RobotChangeOver = false;
 
                     }
                     Communtion();
                     UpdateControl();
                     PciShow();
                     //SysStauLab.ForeColor = _SystemRun ? Color.Green : Color.Red;
-                    StaticCommonVar.Opcua_Status = _UaClient.Connected ;
+                    StaticCommonVar.Opcua_Status = _UaClient.Connected;
                     //ADSConLab.ForeColor = _plcConnected ? Color.Green : Color.Red;
-                    StaticCommonVar.X_Status = _PCI_X  ;
+                    StaticCommonVar.X_Status = _PCI_X;
                     StaticCommonVar.Y_Status = _PCI_Y;
                     StaticCommonVar.Data_Status = _socket.Connected;
                     StaticCommonVar.Ready_Status = _SysReady;
@@ -2959,275 +2950,9 @@ namespace RTC
             {
                 //XndYList.Clear();
                 _ltMsg.Clear();
-                _ID= Convert.ToDouble(DateTime.Now.ToString("yyyyMMddHHmmss")).ToString();
+                _ID = Convert.ToDouble(DateTime.Now.ToString("yyyyMMddHHmmss")).ToString();
                 _SystemRun = true;
                 _disable = true;
-                #region opcua采集线程
-                //上圆采集数据线程 采集x的信号点
-                //Task.Run(() =>
-                //{
-                //    try
-                //    {
-                //        while (_disable)
-                //        {
-                //            Thread.Sleep(1);
-                //            // if (FourBytes[0].ToString().Contains("1") && !var[0]) {
-                //            if ((bool)_PLCclient.ReadAny(_PLCclient.CreateVariableHandle("GVL.X"), typeof(System.Boolean)))
-                //            {
-                //                //x信号
-                //                //var[0] = true;
-                //                //DateTime now = DateTime.Now;
-                //                //double milliseconds = now.TimeOfDay.TotalMilliseconds;
-                //                DateTime milliseconds = DateTime.UtcNow;
-                //                //TimeSpan ts = d2 - d1;
-                //                //Console.WriteLine(ts.TotalMilliseconds);
-                //                if (UpOk == true && DownOk == false)
-                //                {
-                //                    PointAndTime u1 = new PointAndTime();
-                //                    u1.TimeMillos = milliseconds;
-                //                    u1.IsWhat = "X";
-                //                    upointList.Add(u1);
-                //                }
-                //                if (UpOk == false && DownOk == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "X";
-                //                    dpointList.Add(d);
-                //                }
-                //                if (ThreeOK == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "X";
-                //                    xypoint.Add(d);
-                //                }
-                //                if (Obliquecircle == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "X";
-                //                    ObliquecircleList.Add(d);
-
-                //                }
-
-                //                if (Obliquecircle2 == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "X";
-                //                    ObliquecircleList2.Add(d);
-
-                //                }
-
-
-                //                #region 写数据库
-                //                ////判断是上圆还是下圆
-                //                //string types = type;
-                //                ////上圆就写入上圆的集合 下圆就写入下圆的集合
-                //                //if (type == "up")
-                //                //{
-                //                //    upCr.Add(new Point3D(Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4])));
-                //                //}
-                //                //if (type == "down")
-                //                //{
-                //                //    DownCr.Add(new Point3D(Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4])));
-                //                //}
-                //                //try
-                //                //{
-                //                //    //写入数据库
-                //                //    InsertData(data, types);
-
-                //                //}
-                //                //catch (Exception ex)
-                //                //{
-
-                //                //    throw;
-                //                //}
-                //                #endregion
-
-                //            }
-                //            else
-                //            {
-                //                // var[0] = false;
-
-                //            }
-                //        }
-                //    }
-                //    catch (Exception ex)
-                //    {
-
-                //        LogHelper.WriteFile("X信号采集线程异常" + ex.ToString());
-                //    }
-
-
-                //});
-                ////下圆采集数据线程 采集所有y的信号点
-                //Task.Run(() =>
-                //{
-                //    try
-                //    {
-                //        while (_disable)
-                //        {
-                //            Thread.Sleep(1);
-                //            //if (FourBytes[0].ToString().Contains("2") && !var[1])
-                //            if ((bool)_PLCclient.ReadAny(_PLCclient.CreateVariableHandle("GVL.Y"), typeof(System.Boolean)))
-                //            {
-                //                DateTime milliseconds = DateTime.UtcNow;
-                //                if (UpOk == true && DownOk == false)
-                //                {
-                //                    PointAndTime u = new PointAndTime();
-                //                    u.TimeMillos = milliseconds;
-                //                    u.IsWhat = "Y";
-                //                    upointList.Add(u);
-                //                }
-                //                if (UpOk == false && DownOk == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "Y";
-                //                    dpointList.Add(d);
-                //                }
-                //                if (ThreeOK == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "Y";
-                //                    xypoint.Add(d);
-                //                }
-                //                if (Obliquecircle == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "Y";
-                //                    ObliquecircleList.Add(d);
-
-                //                }
-                //                if (Obliquecircle2 == true)
-                //                {
-                //                    PointAndTime d = new PointAndTime();
-                //                    d.TimeMillos = milliseconds;
-                //                    d.IsWhat = "Y";
-                //                    ObliquecircleList2.Add(d);
-
-                //                }
-                //                #region 写数据库
-                //                ////判断是上圆还是下圆
-                //                //string types =type;
-                //                //////上圆就写入上圆的集合 下圆就写入下圆的集合
-                //                //if (type == "up")
-                //                //{
-                //                //    upCr.Add(new Point3D(Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4])));
-                //                //}
-                //                //if (type == "down")
-                //                //{
-                //                //    DownCr.Add(new Point3D(Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4])));
-                //                //}
-                //                ////写入数据库
-                //                //InsertData(data, types);
-                //                #endregion 写数据库结束
-                //            }
-                //            else
-                //            {
-                //                // var[1] = false;
-                //            }
-                //        }
-
-                //    }
-                //    catch (Exception ex)
-                //    {
-
-                //        LogHelper.WriteFile("Y信号采集线程异常" + ex.ToString());
-                //    }
-
-                //});
-                ////校准z轴的时候采集点位 采集x和y同时存在的点位
-                //Task.Run(() =>
-                //{
-                //    try
-                //    {
-                //        while (_disable)
-                //        {
-                //            Thread.Sleep(1);
-                //            //if (FourBytes[0].ToString().Contains("2") && !var[1])
-                //            if ((bool)_PLCclient.ReadAny(_PLCclient.CreateVariableHandle("GVL.Y"), typeof(System.Boolean)) && (bool)_PLCclient.ReadAny(_PLCclient.CreateVariableHandle("GVL.X"), typeof(System.Boolean)))
-                //            {
-                //                //if (DownOk == false && ThreeOK == false)
-                //                //{
-                //                DateTime milliseconds = DateTime.UtcNow;
-                //                PointAndTime xy = new PointAndTime();
-                //                xy.TimeMillos = milliseconds;
-                //                xy.IsWhat = "XY";
-                //                XndYList.Add(xy);
-                //                // }
-                //                #region 写数据库
-                //                ////判断是上圆还是下圆
-                //                //string types =type;
-                //                //////上圆就写入上圆的集合 下圆就写入下圆的集合
-                //                //if (type == "up")
-                //                //{
-                //                //    upCr.Add(new Point3D(Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4])));
-                //                //}
-                //                //if (type == "down")
-                //                //{
-                //                //    DownCr.Add(new Point3D(Convert.ToDouble(data[2]), Convert.ToDouble(data[3]), Convert.ToDouble(data[4])));
-                //                //}
-                //                ////写入数据库
-                //                //InsertData(data, types);
-                //                #endregion 写数据库结束
-                //            }
-                //            else
-                //            {
-                //                // var[1] = false;
-                //            }
-                //        }
-                //    }
-                //    catch (Exception ex)
-                //    { LogHelper.WriteFile("Z信号采集线程异常" + ex.ToString()); }
-
-
-                //});
-                ////精度线程
-                //Task.Run(() =>
-                //{
-                //    try
-                //    {
-                //        while (_disable)
-                //        {
-                //            //Thread.Sleep(1);
-                //            //if (_plcConnected)
-                //            //{
-                //            //   // hangle1 = client.CreateVariableHandle("GVL.X");
-                //            //    //hangle2 = client.CreateVariableHandle("GVL.Y");
-                //            //    _X = (bool)_PLCclient.ReadAny(_PLCclient.CreateVariableHandle("GVL.X"), typeof(System.Boolean));
-                //            //    _Y = (bool)_PLCclient.ReadAny(_PLCclient.CreateVariableHandle("GVL.Y"), typeof(System.Boolean));
-                //            //}
-                //            if (dataValues[5].Value != null)
-                //            {
-                //                bool[] EndRes = (bool[])dataValues[5].Value;
-                //                if (EndRes[0] == true) { UpOk = true; DownOk = false; }
-                //                if (EndRes[1] == true) { UpOk = false; DownOk = true; }
-                //                if (EndRes[0] == false && EndRes[1] == false) { UpOk = false; DownOk = false; }
-                //                if (EndRes[0] == false && EndRes[1] == false && EndRes[2] == true) { UpOk = false; DownOk = false; ThreeOK = true; }
-                //                if (EndRes[0] == false && EndRes[1] == false && EndRes[2] == false) { UpOk = false; DownOk = false; ThreeOK = false; }
-                //                if (EndRes[0] == true && EndRes[1] == false && EndRes[2] == false) { UpOk = true; DownOk = false; ThreeOK = false; }
-                //                //if (EndRes[3] == true) { Obliquecircle = true; }
-                //                //if (EndRes[3] == false) { Obliquecircle = false; }
-                //                //if (EndRes[4] == false) { Obliquecircle2 = false; }
-                //                //if (EndRes[4] == true) { Obliquecircle2 = true; }
-                //                //这里的value为{false|false}，所以这样解析不对
-                //                // data.Add( dataValues[5].Value.ToString());
-                //            }
-
-                //        }
-                //    }
-                //    catch (Exception ex)
-                //    { LogHelper.WriteFile("xy信号采集线程异常" + ex.ToString()); }
-
-
-
-                //});
-                #endregion
                 _Stopwatch.Start();
 
             }
@@ -3242,42 +2967,44 @@ namespace RTC
         /// </summary>
         private void Init()
         {
-
+            #region 初始变量
             StartBtn.Enabled = false;
-          
             ConfigRunBtn.Enabled = false;
 
-            //RtAdjToolGroupBox.Visible = false;
-            //RotRealToolGroupBox.Visible = false;
-            //MainGrpup.Visible = false;
-            //RtProToolGroupBox.Visible = false;
-            //CheckLightLab.ForeColor = Color.Gray;
-            string exefile = "";
-            #region 数据采集软件
-            if (_cp.ExeType=="PCI")
-            {
-                 exefile = _pathRoot + @"DataAPP\pci1761_socket_console.exe";
-            }
-            else
-            {
-                 exefile = _pathRoot + @"DataAPP\tc3Ads_socket_console.exe";
-            }
+            #endregion
 
-            //string exefile = _pathRoot + @"DataAPP\tc3Ads_socket_console.exe";
-            //判断是否在运行
-            _Processes = Process.GetProcessesByName("pci1761_socket_console");
-            //Process[] processes = Process.GetProcessesByName("tc3Ads_socket_console");
+            #region 数据采集软件
+            if (_cp.ExeType == "PCI")
+            {
+                _ExeFile = _pathRoot + @"DataAPP\pci1761_socket_console.exe";
+                _Processes = Process.GetProcessesByName("pci1761_socket_console");
+            }
+            else if (_cp.ExeType == "TWINCAT")
+            {
+                _ExeFile = _pathRoot + @"DataAPP\tc3Ads_socket_console.exe";
+                _Processes = Process.GetProcessesByName("tc3Ads_socket_console");
+            }
             if (_Processes.Length == 0)
             {
                 InsetMsg("打开数据采集软件...");
 
                 _ControlUpdate = true;
-                if (File.Exists(exefile))
+                if (File.Exists(_ExeFile))
                 {
-                    Process process = new Process();   // params 为 string 类型的参数，多个参数以空格分隔，如果某个参数为空，可以传入””
-                    ProcessStartInfo startInfo = new ProcessStartInfo(exefile);
+                    process = new Process();
+                    startInfo = new ProcessStartInfo(_ExeFile);
                     process.StartInfo = startInfo;
                     process.Start();
+                    Thread.Sleep(500);
+
+                    process = null;
+
+                }
+                else
+                {
+                    InsetMsg("数据采集软件不存在");
+
+                    _ControlUpdate = true;
                 }
                 Thread.Sleep(200);
             }
@@ -3296,18 +3023,8 @@ namespace RTC
             _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             #endregion
 
-            #region 界面初始化
-            //for (int i = 0; i < _cp.Robots.Count; i++)
-            //{
-            //    //comboBox3.Items.Add(_cp.Robots[i].RobotIP);
-            //}
-           
-            //OPCUAAdresBox.Text = $"opc.tcp://{_cp.Robots.RobotIP}:4840";
-
-            #endregion
-
             #region opcua 配置
-            NoteService =$"opc.tcp://{_cp.Robots.RobotIP}:4840";
+            NoteService = $"opc.tcp://{_cp.Robots.RobotIP}:4840";
             if (application == null)
             {
                 application = new ApplicationInstance();
@@ -3333,7 +3050,7 @@ namespace RTC
             #endregion
 
             #region ADS配置
-            if (exefile.Contains("tc3Ads_socket_console"))
+            if (_ExeFile.Contains("tc3Ads_socket_console"))
             {
 
 
@@ -3343,18 +3060,11 @@ namespace RTC
                 //ads var
                 _Hangle_X = "X";
                 _Hangle_Y = "Y";
-                _Hangle_BtnStart = "start";
-                _Hangle_LightOK = "light_ok";
-                _Hangle_LightNG = "light_ng";
-                _Hangle_BtnCheck = "Check";
+
             }
             else
             {
-                //label3.Visible = false;
-                //label4.Visible = false;
-                //label6.Visible = false;
-                //AdsBox.Visible = false;
-                //ADSConLab.Visible = false;
+
             }
             #endregion
 
@@ -3414,7 +3124,7 @@ namespace RTC
             OpcuaKukaVar.Add("ns=5;s=MotionDeviceSystem.ProcessData.R1.System.$config.OPCUA_ToolNum3");//26
             OpcuaKukaVar.Add("ns=5;s=MotionDeviceSystem.ProcessData.R1.System.$config.OPCUA_ToolNum4");//27
             OpcuaKukaVar.Add("ns=5;s=MotionDeviceSystem.ProcessData.R1.System.$config.OPCUA_ProSpeed");//28
-            //直接抓取现场暂时没有
+                                                                                                       //直接抓取现场暂时没有
             OpcuaKukaVar.Add("ns=5;s=MotionDeviceSystem.ProcessData.R1.System.$config.CaGrap");//29
             OpcuaKukaVar.Add("ns=5;s=MotionDeviceSystem.ProcessData.R1.System.$config.OPCUA_ToolNum");//30
             OpcuaKukaVar.Add("ns=5;s=MotionDeviceSystem.ProcessData.R1.System.$config.OPCUA_ContinueAdj");//31
@@ -3504,7 +3214,7 @@ namespace RTC
             ConfigPara cp = xml.Deserialize(fs) as ConfigPara;
             fs.Close();
             _cp = cp;
-            _RobotName = _cp.Robots.BU + "_" + _cp.Robots.LineName + "_" + _cp.Robots.WorkName + "_" + _cp.Robots.RobotName+"_"+_cp.Robots.RobotSeriorNo;
+            _RobotName = _cp.Robots.BU + "_" + _cp.Robots.LineName + "_" + _cp.Robots.WorkName + "_" + _cp.Robots.RobotName + "_" + _cp.Robots.RobotSeriorNo;
             _RobotExcelAdress = _cp.Robots.BU + "\\" + _cp.Robots.LineName + "\\" + _cp.Robots.WorkName + "\\" + _cp.Robots.RobotName + "\\" + _cp.Robots.RobotSeriorNo; ;
             StaticCommonVar.AdminPwd = _cp.AdminPwd;
             StaticCommonVar.RobotName = _RobotName;
@@ -3705,13 +3415,13 @@ namespace RTC
             }
             if (MessageBox.Show("是否开始检查？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
             {
-               
-           
-            CheckTimeLab.Text = DateTime.Now.ToString();
-            _CheckStart = true;
-            _CheckSignal = true;
-            _Start = false;
-            _testdata[44] = "Check";
+
+
+                CheckTimeLab.Text = DateTime.Now.ToString();
+                _CheckStart = true;
+                _CheckSignal = true;
+                _Start = false;
+                _testdata[44] = "Check";
             }
         }
 
@@ -3733,7 +3443,7 @@ namespace RTC
                 _CheckSignal = false;
                 _Start = true;
             }
-           
+
         }
 
         private void ConfigRunBtn_Click(object sender, EventArgs e)
@@ -3785,15 +3495,45 @@ namespace RTC
             }
         }
 
-        public ConfigPara HistoryParaBack(out double[] point,out int RobotsIndex)
+        public ConfigPara HistoryParaBack(out double[] point, out int RobotsIndex)
         {
             point = _KukaPoint; RobotsIndex = _RobotsIndex;
             return _cp;
         }
-        public ConfigPara AnalyParaBack(out double[] point, out int RobotsIndex,out string path)
+        public ConfigPara AnalyParaBack(out double[] point, out int RobotsIndex, out string path)
         {
             point = _KukaPoint; RobotsIndex = _RobotsIndex; path = _pathRoot;
             return _cp;
+        }
+
+        public bool ChangeOver()
+        {
+
+            if (_cp.ExeType == "PCI")
+            {
+
+                _Processes = Process.GetProcessesByName("pci1761_socket_console");
+            }
+            else if (_cp.ExeType == "TWINCAT")
+            {
+
+                _Processes = Process.GetProcessesByName("tc3Ads_socket_console");
+            }
+
+            if (_Processes.Length != 0)
+            {
+                if (File.Exists(_ExeFile))
+                {
+                    _Processes[0].Kill();
+
+                    Thread.Sleep(500);
+                    ProcessStartInfo startInfo = new ProcessStartInfo(_ExeFile);
+                    _Processes[0].StartInfo = startInfo;
+                    _Processes[0].Start();
+                    //  process = null;
+                }
+            }
+            return false;
         }
     }
 }

@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ShowNowBtn = new System.Windows.Forms.Button();
             this.SelectBtn = new System.Windows.Forms.Button();
@@ -793,7 +797,7 @@
             this.tabPage3.Controls.Add(this.panel1);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1117, 807);
+            this.tabPage3.Size = new System.Drawing.Size(1269, 807);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "工具以及夹爪配置";
             // 
@@ -1735,7 +1739,7 @@
             this.tabPage2.Controls.Add(this.AnalyFileSelectList);
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1117, 807);
+            this.tabPage2.Size = new System.Drawing.Size(1269, 807);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "矫正数据";
             // 
@@ -1773,7 +1777,7 @@
             this.label23.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label23.Location = new System.Drawing.Point(174, 721);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(943, 28);
+            this.label23.Size = new System.Drawing.Size(1095, 28);
             this.label23.TabIndex = 114;
             this.label23.Text = "多夹爪数据切换";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1813,16 +1817,16 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(943, 105);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1095, 105);
             this.tableLayoutPanel3.TabIndex = 113;
             // 
             // WriteHeihtLabe
             // 
             this.WriteHeihtLabe.AutoSize = true;
             this.WriteHeihtLabe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WriteHeihtLabe.Location = new System.Drawing.Point(802, 69);
+            this.WriteHeihtLabe.Location = new System.Drawing.Point(932, 69);
             this.WriteHeihtLabe.Name = "WriteHeihtLabe";
-            this.WriteHeihtLabe.Size = new System.Drawing.Size(137, 35);
+            this.WriteHeihtLabe.Size = new System.Drawing.Size(159, 35);
             this.WriteHeihtLabe.TabIndex = 114;
             this.WriteHeihtLabe.Text = "null";
             this.WriteHeihtLabe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1831,9 +1835,9 @@
             // 
             this.NowXyz_xLab.AutoSize = true;
             this.NowXyz_xLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowXyz_xLab.Location = new System.Drawing.Point(136, 69);
+            this.NowXyz_xLab.Location = new System.Drawing.Point(157, 69);
             this.NowXyz_xLab.Name = "NowXyz_xLab";
-            this.NowXyz_xLab.Size = new System.Drawing.Size(165, 35);
+            this.NowXyz_xLab.Size = new System.Drawing.Size(193, 35);
             this.NowXyz_xLab.TabIndex = 86;
             this.NowXyz_xLab.Text = " ";
             this.NowXyz_xLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1842,9 +1846,9 @@
             // 
             this.CfigHeighLab.AutoSize = true;
             this.CfigHeighLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigHeighLab.Location = new System.Drawing.Point(802, 35);
+            this.CfigHeighLab.Location = new System.Drawing.Point(932, 35);
             this.CfigHeighLab.Name = "CfigHeighLab";
-            this.CfigHeighLab.Size = new System.Drawing.Size(137, 33);
+            this.CfigHeighLab.Size = new System.Drawing.Size(159, 33);
             this.CfigHeighLab.TabIndex = 115;
             this.CfigHeighLab.Text = "null";
             this.CfigHeighLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1855,7 +1859,7 @@
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Location = new System.Drawing.Point(4, 35);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(125, 33);
+            this.label18.Size = new System.Drawing.Size(146, 33);
             this.label18.TabIndex = 2;
             this.label18.Text = "配置文件值";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1864,9 +1868,9 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(136, 1);
+            this.label21.Location = new System.Drawing.Point(157, 1);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(165, 33);
+            this.label21.Size = new System.Drawing.Size(193, 33);
             this.label21.TabIndex = 16;
             this.label21.Text = "ABC_Y";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1875,9 +1879,9 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(308, 1);
+            this.label20.Location = new System.Drawing.Point(357, 1);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(170, 33);
+            this.label20.Size = new System.Drawing.Size(199, 33);
             this.label20.TabIndex = 17;
             this.label20.Text = "ABC_Z";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1886,9 +1890,9 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Location = new System.Drawing.Point(485, 1);
+            this.label36.Location = new System.Drawing.Point(563, 1);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(166, 33);
+            this.label36.Size = new System.Drawing.Size(194, 33);
             this.label36.TabIndex = 18;
             this.label36.Text = "XYZ_X";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1897,9 +1901,9 @@
             // 
             this.CfigAbc_zLab.AutoSize = true;
             this.CfigAbc_zLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigAbc_zLab.Location = new System.Drawing.Point(308, 35);
+            this.CfigAbc_zLab.Location = new System.Drawing.Point(357, 35);
             this.CfigAbc_zLab.Name = "CfigAbc_zLab";
-            this.CfigAbc_zLab.Size = new System.Drawing.Size(170, 33);
+            this.CfigAbc_zLab.Size = new System.Drawing.Size(199, 33);
             this.CfigAbc_zLab.TabIndex = 21;
             this.CfigAbc_zLab.Text = " 1";
             this.CfigAbc_zLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1908,9 +1912,9 @@
             // 
             this.CfigAbc_yLab.AutoSize = true;
             this.CfigAbc_yLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigAbc_yLab.Location = new System.Drawing.Point(136, 35);
+            this.CfigAbc_yLab.Location = new System.Drawing.Point(157, 35);
             this.CfigAbc_yLab.Name = "CfigAbc_yLab";
-            this.CfigAbc_yLab.Size = new System.Drawing.Size(165, 33);
+            this.CfigAbc_yLab.Size = new System.Drawing.Size(193, 33);
             this.CfigAbc_yLab.TabIndex = 20;
             this.CfigAbc_yLab.Text = " ";
             this.CfigAbc_yLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1919,9 +1923,9 @@
             // 
             this.CfigXyz_yLab.AutoSize = true;
             this.CfigXyz_yLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigXyz_yLab.Location = new System.Drawing.Point(658, 35);
+            this.CfigXyz_yLab.Location = new System.Drawing.Point(764, 35);
             this.CfigXyz_yLab.Name = "CfigXyz_yLab";
-            this.CfigXyz_yLab.Size = new System.Drawing.Size(137, 33);
+            this.CfigXyz_yLab.Size = new System.Drawing.Size(161, 33);
             this.CfigXyz_yLab.TabIndex = 23;
             this.CfigXyz_yLab.Text = " ";
             this.CfigXyz_yLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1930,9 +1934,9 @@
             // 
             this.CfigXyz_xLab.AutoSize = true;
             this.CfigXyz_xLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigXyz_xLab.Location = new System.Drawing.Point(485, 35);
+            this.CfigXyz_xLab.Location = new System.Drawing.Point(563, 35);
             this.CfigXyz_xLab.Name = "CfigXyz_xLab";
-            this.CfigXyz_xLab.Size = new System.Drawing.Size(166, 33);
+            this.CfigXyz_xLab.Size = new System.Drawing.Size(194, 33);
             this.CfigXyz_xLab.TabIndex = 22;
             this.CfigXyz_xLab.Text = " 1";
             this.CfigXyz_xLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1941,9 +1945,9 @@
             // 
             this.NowXyz_yLab.AutoSize = true;
             this.NowXyz_yLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowXyz_yLab.Location = new System.Drawing.Point(658, 69);
+            this.NowXyz_yLab.Location = new System.Drawing.Point(764, 69);
             this.NowXyz_yLab.Name = "NowXyz_yLab";
-            this.NowXyz_yLab.Size = new System.Drawing.Size(137, 35);
+            this.NowXyz_yLab.Size = new System.Drawing.Size(161, 35);
             this.NowXyz_yLab.TabIndex = 87;
             this.NowXyz_yLab.Text = " ";
             this.NowXyz_yLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1954,7 +1958,7 @@
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Location = new System.Drawing.Point(4, 69);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(125, 35);
+            this.label19.Size = new System.Drawing.Size(146, 35);
             this.label19.TabIndex = 3;
             this.label19.Text = "选中文件值";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1963,9 +1967,9 @@
             // 
             this.NowAbc_zLab.AutoSize = true;
             this.NowAbc_zLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowAbc_zLab.Location = new System.Drawing.Point(485, 69);
+            this.NowAbc_zLab.Location = new System.Drawing.Point(563, 69);
             this.NowAbc_zLab.Name = "NowAbc_zLab";
-            this.NowAbc_zLab.Size = new System.Drawing.Size(166, 35);
+            this.NowAbc_zLab.Size = new System.Drawing.Size(194, 35);
             this.NowAbc_zLab.TabIndex = 85;
             this.NowAbc_zLab.Text = " ";
             this.NowAbc_zLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1974,9 +1978,9 @@
             // 
             this.NowAbc_yLab.AutoSize = true;
             this.NowAbc_yLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowAbc_yLab.Location = new System.Drawing.Point(308, 69);
+            this.NowAbc_yLab.Location = new System.Drawing.Point(357, 69);
             this.NowAbc_yLab.Name = "NowAbc_yLab";
-            this.NowAbc_yLab.Size = new System.Drawing.Size(170, 35);
+            this.NowAbc_yLab.Size = new System.Drawing.Size(199, 35);
             this.NowAbc_yLab.TabIndex = 84;
             this.NowAbc_yLab.Text = " ";
             this.NowAbc_yLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1985,9 +1989,9 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Location = new System.Drawing.Point(658, 1);
+            this.label35.Location = new System.Drawing.Point(764, 1);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(137, 33);
+            this.label35.Size = new System.Drawing.Size(161, 33);
             this.label35.TabIndex = 19;
             this.label35.Text = "XYZ_Y";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1996,9 +2000,9 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Location = new System.Drawing.Point(802, 1);
+            this.label22.Location = new System.Drawing.Point(932, 1);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(137, 33);
+            this.label22.Size = new System.Drawing.Size(159, 33);
             this.label22.TabIndex = 88;
             this.label22.Text = "画圆高度";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2010,7 +2014,7 @@
             this.label17.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label17.Location = new System.Drawing.Point(174, 588);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(943, 28);
+            this.label17.Size = new System.Drawing.Size(1095, 28);
             this.label17.TabIndex = 112;
             this.label17.Text = "补偿值/画圆点高度";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2041,7 +2045,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(943, 100);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1095, 100);
             this.tableLayoutPanel2.TabIndex = 111;
             // 
             // label10
@@ -2050,7 +2054,7 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Location = new System.Drawing.Point(4, 34);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 32);
+            this.label10.Size = new System.Drawing.Size(147, 32);
             this.label10.TabIndex = 1;
             this.label10.Text = "配置文件值";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2059,9 +2063,9 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(137, 1);
+            this.label15.Location = new System.Drawing.Point(158, 1);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(262, 32);
+            this.label15.Size = new System.Drawing.Size(306, 32);
             this.label15.TabIndex = 4;
             this.label15.Text = "Point1";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2070,9 +2074,9 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(406, 1);
+            this.label14.Location = new System.Drawing.Point(471, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(262, 32);
+            this.label14.Size = new System.Drawing.Size(306, 32);
             this.label14.TabIndex = 5;
             this.label14.Text = "Point2";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2081,9 +2085,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(675, 1);
+            this.label13.Location = new System.Drawing.Point(784, 1);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(264, 32);
+            this.label13.Size = new System.Drawing.Size(307, 32);
             this.label13.TabIndex = 6;
             this.label13.Text = "Point3";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2092,9 +2096,9 @@
             // 
             this.CfigPoint1Lab.AutoSize = true;
             this.CfigPoint1Lab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigPoint1Lab.Location = new System.Drawing.Point(137, 34);
+            this.CfigPoint1Lab.Location = new System.Drawing.Point(158, 34);
             this.CfigPoint1Lab.Name = "CfigPoint1Lab";
-            this.CfigPoint1Lab.Size = new System.Drawing.Size(262, 32);
+            this.CfigPoint1Lab.Size = new System.Drawing.Size(306, 32);
             this.CfigPoint1Lab.TabIndex = 11;
             this.CfigPoint1Lab.Text = "Point1：";
             this.CfigPoint1Lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2103,9 +2107,9 @@
             // 
             this.CfigPoint2Lab.AutoSize = true;
             this.CfigPoint2Lab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigPoint2Lab.Location = new System.Drawing.Point(406, 34);
+            this.CfigPoint2Lab.Location = new System.Drawing.Point(471, 34);
             this.CfigPoint2Lab.Name = "CfigPoint2Lab";
-            this.CfigPoint2Lab.Size = new System.Drawing.Size(262, 32);
+            this.CfigPoint2Lab.Size = new System.Drawing.Size(306, 32);
             this.CfigPoint2Lab.TabIndex = 12;
             this.CfigPoint2Lab.Text = "Point2：";
             this.CfigPoint2Lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2114,9 +2118,9 @@
             // 
             this.CfigPoint3Lab.AutoSize = true;
             this.CfigPoint3Lab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CfigPoint3Lab.Location = new System.Drawing.Point(675, 34);
+            this.CfigPoint3Lab.Location = new System.Drawing.Point(784, 34);
             this.CfigPoint3Lab.Name = "CfigPoint3Lab";
-            this.CfigPoint3Lab.Size = new System.Drawing.Size(264, 32);
+            this.CfigPoint3Lab.Size = new System.Drawing.Size(307, 32);
             this.CfigPoint3Lab.TabIndex = 13;
             this.CfigPoint3Lab.Text = "Point3：";
             this.CfigPoint3Lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2127,7 +2131,7 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Location = new System.Drawing.Point(4, 67);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 32);
+            this.label12.Size = new System.Drawing.Size(147, 32);
             this.label12.TabIndex = 2;
             this.label12.Text = "选中文件值";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2136,9 +2140,9 @@
             // 
             this.NowPoint2Lab.AutoSize = true;
             this.NowPoint2Lab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowPoint2Lab.Location = new System.Drawing.Point(406, 67);
+            this.NowPoint2Lab.Location = new System.Drawing.Point(471, 67);
             this.NowPoint2Lab.Name = "NowPoint2Lab";
-            this.NowPoint2Lab.Size = new System.Drawing.Size(262, 32);
+            this.NowPoint2Lab.Size = new System.Drawing.Size(306, 32);
             this.NowPoint2Lab.TabIndex = 15;
             this.NowPoint2Lab.Text = "Point2：";
             this.NowPoint2Lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2147,9 +2151,9 @@
             // 
             this.NowPoint3Lab.AutoSize = true;
             this.NowPoint3Lab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowPoint3Lab.Location = new System.Drawing.Point(137, 67);
+            this.NowPoint3Lab.Location = new System.Drawing.Point(158, 67);
             this.NowPoint3Lab.Name = "NowPoint3Lab";
-            this.NowPoint3Lab.Size = new System.Drawing.Size(262, 32);
+            this.NowPoint3Lab.Size = new System.Drawing.Size(306, 32);
             this.NowPoint3Lab.TabIndex = 16;
             this.NowPoint3Lab.Text = "Point3：";
             this.NowPoint3Lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2158,9 +2162,9 @@
             // 
             this.NowPoint1Lab.AutoSize = true;
             this.NowPoint1Lab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowPoint1Lab.Location = new System.Drawing.Point(675, 67);
+            this.NowPoint1Lab.Location = new System.Drawing.Point(784, 67);
             this.NowPoint1Lab.Name = "NowPoint1Lab";
-            this.NowPoint1Lab.Size = new System.Drawing.Size(264, 32);
+            this.NowPoint1Lab.Size = new System.Drawing.Size(307, 32);
             this.NowPoint1Lab.TabIndex = 14;
             this.NowPoint1Lab.Text = "Point1：";
             this.NowPoint1Lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2172,7 +2176,7 @@
             this.label9.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(174, 460);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(943, 28);
+            this.label9.Size = new System.Drawing.Size(1095, 28);
             this.label9.TabIndex = 110;
             this.label9.Text = "画圆点位";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2215,17 +2219,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(943, 100);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1095, 100);
             this.tableLayoutPanel1.TabIndex = 109;
             // 
             // NowtoolyLab
             // 
             this.NowtoolyLab.AutoSize = true;
             this.NowtoolyLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowtoolyLab.Location = new System.Drawing.Point(273, 66);
+            this.NowtoolyLab.Location = new System.Drawing.Point(317, 66);
             this.NowtoolyLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NowtoolyLab.Name = "NowtoolyLab";
-            this.NowtoolyLab.Size = new System.Drawing.Size(125, 33);
+            this.NowtoolyLab.Size = new System.Drawing.Size(147, 33);
             this.NowtoolyLab.TabIndex = 119;
             this.NowtoolyLab.Text = "null";
             this.NowtoolyLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2234,10 +2238,10 @@
             // 
             this.ConfigyLab.AutoSize = true;
             this.ConfigyLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ConfigyLab.Location = new System.Drawing.Point(273, 34);
+            this.ConfigyLab.Location = new System.Drawing.Point(317, 34);
             this.ConfigyLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConfigyLab.Name = "ConfigyLab";
-            this.ConfigyLab.Size = new System.Drawing.Size(125, 31);
+            this.ConfigyLab.Size = new System.Drawing.Size(147, 31);
             this.ConfigyLab.TabIndex = 113;
             this.ConfigyLab.Text = "label15";
             this.ConfigyLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2246,9 +2250,9 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(138, 1);
+            this.label16.Location = new System.Drawing.Point(160, 1);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(127, 32);
+            this.label16.Size = new System.Drawing.Size(149, 32);
             this.label16.TabIndex = 30;
             this.label16.Text = "ToolX";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2257,9 +2261,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(272, 1);
+            this.label8.Location = new System.Drawing.Point(316, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 32);
+            this.label8.Size = new System.Drawing.Size(149, 32);
             this.label8.TabIndex = 31;
             this.label8.Text = "ToolY";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2268,9 +2272,9 @@
             // 
             this.label62.AutoSize = true;
             this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label62.Location = new System.Drawing.Point(406, 1);
+            this.label62.Location = new System.Drawing.Point(472, 1);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(127, 32);
+            this.label62.Size = new System.Drawing.Size(149, 32);
             this.label62.TabIndex = 32;
             this.label62.Text = "ToolZ";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2279,9 +2283,9 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Location = new System.Drawing.Point(540, 1);
+            this.label33.Location = new System.Drawing.Point(628, 1);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(127, 32);
+            this.label33.Size = new System.Drawing.Size(149, 32);
             this.label33.TabIndex = 27;
             this.label33.Text = "ToolA";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2292,7 +2296,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(4, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 31);
+            this.label6.Size = new System.Drawing.Size(149, 31);
             this.label6.TabIndex = 0;
             this.label6.Text = "配置文件值";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2303,7 +2307,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(4, 66);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 33);
+            this.label7.Size = new System.Drawing.Size(149, 33);
             this.label7.TabIndex = 1;
             this.label7.Text = "选中文件值";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2312,9 +2316,9 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label41.Location = new System.Drawing.Point(808, 1);
+            this.label41.Location = new System.Drawing.Point(940, 1);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(131, 32);
+            this.label41.Size = new System.Drawing.Size(151, 32);
             this.label41.TabIndex = 29;
             this.label41.Text = "ToolC";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2323,9 +2327,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(674, 1);
+            this.label11.Location = new System.Drawing.Point(784, 1);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 32);
+            this.label11.Size = new System.Drawing.Size(149, 32);
             this.label11.TabIndex = 28;
             this.label11.Text = "ToolB";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2334,10 +2338,10 @@
             // 
             this.ConfigcLab.AutoSize = true;
             this.ConfigcLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ConfigcLab.Location = new System.Drawing.Point(809, 34);
+            this.ConfigcLab.Location = new System.Drawing.Point(941, 34);
             this.ConfigcLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConfigcLab.Name = "ConfigcLab";
-            this.ConfigcLab.Size = new System.Drawing.Size(129, 31);
+            this.ConfigcLab.Size = new System.Drawing.Size(149, 31);
             this.ConfigcLab.TabIndex = 114;
             this.ConfigcLab.Text = "label15";
             this.ConfigcLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2346,10 +2350,10 @@
             // 
             this.Configxlab.AutoSize = true;
             this.Configxlab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Configxlab.Location = new System.Drawing.Point(139, 34);
+            this.Configxlab.Location = new System.Drawing.Point(161, 34);
             this.Configxlab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Configxlab.Name = "Configxlab";
-            this.Configxlab.Size = new System.Drawing.Size(125, 31);
+            this.Configxlab.Size = new System.Drawing.Size(147, 31);
             this.Configxlab.TabIndex = 111;
             this.Configxlab.Text = "label15";
             this.Configxlab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2358,10 +2362,10 @@
             // 
             this.ConfigzLab.AutoSize = true;
             this.ConfigzLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ConfigzLab.Location = new System.Drawing.Point(407, 34);
+            this.ConfigzLab.Location = new System.Drawing.Point(473, 34);
             this.ConfigzLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConfigzLab.Name = "ConfigzLab";
-            this.ConfigzLab.Size = new System.Drawing.Size(125, 31);
+            this.ConfigzLab.Size = new System.Drawing.Size(147, 31);
             this.ConfigzLab.TabIndex = 115;
             this.ConfigzLab.Text = "label15";
             this.ConfigzLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2370,10 +2374,10 @@
             // 
             this.ConfigbLab.AutoSize = true;
             this.ConfigbLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ConfigbLab.Location = new System.Drawing.Point(675, 34);
+            this.ConfigbLab.Location = new System.Drawing.Point(785, 34);
             this.ConfigbLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConfigbLab.Name = "ConfigbLab";
-            this.ConfigbLab.Size = new System.Drawing.Size(125, 31);
+            this.ConfigbLab.Size = new System.Drawing.Size(147, 31);
             this.ConfigbLab.TabIndex = 112;
             this.ConfigbLab.Text = "label15";
             this.ConfigbLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2382,10 +2386,10 @@
             // 
             this.ConfigaLab.AutoSize = true;
             this.ConfigaLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ConfigaLab.Location = new System.Drawing.Point(541, 34);
+            this.ConfigaLab.Location = new System.Drawing.Point(629, 34);
             this.ConfigaLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConfigaLab.Name = "ConfigaLab";
-            this.ConfigaLab.Size = new System.Drawing.Size(125, 31);
+            this.ConfigaLab.Size = new System.Drawing.Size(147, 31);
             this.ConfigaLab.TabIndex = 110;
             this.ConfigaLab.Text = "label15";
             this.ConfigaLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2394,10 +2398,10 @@
             // 
             this.NowtoolcLab.AutoSize = true;
             this.NowtoolcLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowtoolcLab.Location = new System.Drawing.Point(809, 66);
+            this.NowtoolcLab.Location = new System.Drawing.Point(941, 66);
             this.NowtoolcLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NowtoolcLab.Name = "NowtoolcLab";
-            this.NowtoolcLab.Size = new System.Drawing.Size(129, 33);
+            this.NowtoolcLab.Size = new System.Drawing.Size(149, 33);
             this.NowtoolcLab.TabIndex = 120;
             this.NowtoolcLab.Text = "null";
             this.NowtoolcLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2406,10 +2410,10 @@
             // 
             this.NowtoolaLab.AutoSize = true;
             this.NowtoolaLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowtoolaLab.Location = new System.Drawing.Point(541, 66);
+            this.NowtoolaLab.Location = new System.Drawing.Point(629, 66);
             this.NowtoolaLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NowtoolaLab.Name = "NowtoolaLab";
-            this.NowtoolaLab.Size = new System.Drawing.Size(125, 33);
+            this.NowtoolaLab.Size = new System.Drawing.Size(147, 33);
             this.NowtoolaLab.TabIndex = 116;
             this.NowtoolaLab.Text = "null";
             this.NowtoolaLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2418,10 +2422,10 @@
             // 
             this.NowtoolxLab.AutoSize = true;
             this.NowtoolxLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowtoolxLab.Location = new System.Drawing.Point(139, 66);
+            this.NowtoolxLab.Location = new System.Drawing.Point(161, 66);
             this.NowtoolxLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NowtoolxLab.Name = "NowtoolxLab";
-            this.NowtoolxLab.Size = new System.Drawing.Size(125, 33);
+            this.NowtoolxLab.Size = new System.Drawing.Size(147, 33);
             this.NowtoolxLab.TabIndex = 117;
             this.NowtoolxLab.Text = "null";
             this.NowtoolxLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2430,10 +2434,10 @@
             // 
             this.NowtoolbLab.AutoSize = true;
             this.NowtoolbLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowtoolbLab.Location = new System.Drawing.Point(675, 66);
+            this.NowtoolbLab.Location = new System.Drawing.Point(785, 66);
             this.NowtoolbLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NowtoolbLab.Name = "NowtoolbLab";
-            this.NowtoolbLab.Size = new System.Drawing.Size(125, 33);
+            this.NowtoolbLab.Size = new System.Drawing.Size(147, 33);
             this.NowtoolbLab.TabIndex = 118;
             this.NowtoolbLab.Text = "null";
             this.NowtoolbLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2442,10 +2446,10 @@
             // 
             this.NowtoolzLab.AutoSize = true;
             this.NowtoolzLab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowtoolzLab.Location = new System.Drawing.Point(407, 66);
+            this.NowtoolzLab.Location = new System.Drawing.Point(473, 66);
             this.NowtoolzLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NowtoolzLab.Name = "NowtoolzLab";
-            this.NowtoolzLab.Size = new System.Drawing.Size(125, 33);
+            this.NowtoolzLab.Size = new System.Drawing.Size(147, 33);
             this.NowtoolzLab.TabIndex = 121;
             this.NowtoolzLab.Text = "null";
             this.NowtoolzLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2457,7 +2461,7 @@
             this.label5.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(174, 332);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(943, 28);
+            this.label5.Size = new System.Drawing.Size(1095, 28);
             this.label5.TabIndex = 108;
             this.label5.Text = "工具";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2466,18 +2470,47 @@
             // 
             this.AnalyFileSelectDataView.AllowUserToAddRows = false;
             this.AnalyFileSelectDataView.AllowUserToDeleteRows = false;
+            this.AnalyFileSelectDataView.AllowUserToResizeColumns = false;
+            this.AnalyFileSelectDataView.AllowUserToResizeRows = false;
             this.AnalyFileSelectDataView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AnalyFileSelectDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.AnalyFileSelectDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AnalyFileSelectDataView.DefaultCellStyle = dataGridViewCellStyle2;
             this.AnalyFileSelectDataView.Dock = System.Windows.Forms.DockStyle.Top;
             this.AnalyFileSelectDataView.Location = new System.Drawing.Point(174, 0);
             this.AnalyFileSelectDataView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AnalyFileSelectDataView.MultiSelect = false;
             this.AnalyFileSelectDataView.Name = "AnalyFileSelectDataView";
             this.AnalyFileSelectDataView.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AnalyFileSelectDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.AnalyFileSelectDataView.RowHeadersVisible = false;
             this.AnalyFileSelectDataView.RowHeadersWidth = 62;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.AnalyFileSelectDataView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.AnalyFileSelectDataView.RowTemplate.Height = 30;
             this.AnalyFileSelectDataView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AnalyFileSelectDataView.Size = new System.Drawing.Size(943, 332);
+            this.AnalyFileSelectDataView.Size = new System.Drawing.Size(1095, 332);
             this.AnalyFileSelectDataView.TabIndex = 106;
             this.AnalyFileSelectDataView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AnalyFileSelectDataView_CellClick);
             this.AnalyFileSelectDataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AnalyFileSelectDataView_CellContentClick);

@@ -38,6 +38,7 @@ namespace RTC
         {
             StaticCommonVar.RobotSaveBtn = RobotSaveBtn;
             UpdateControl();
+            ConfigToolsCom.SelectedIndex = 0;
         }
         public void LoadFun(ConfigPara config,string CurrentRobots)
         {
@@ -259,7 +260,7 @@ namespace RTC
                 string selectedItem = AnalyFileSelectList.SelectedItem.ToString();
                 string robotinit = _configPara.Robots.BU + "\\" + _configPara.Robots.LineName + "\\" + _configPara.Robots.WorkName + "\\" + _configPara.Robots.RobotName + "\\" + _configPara.Robots.RobotSeriorNo; ;
                 string data1 = $@"DataWrite\{robotinit}";
-                _dataTable = GetData(ConfigExcel.ReadExl(selectedItem, data1), ConfigRealToolLab.Text); //ConfigExcel.ReadExl(selectedItem, data1);
+                _dataTable = GetData(ConfigExcel.ReadExl(selectedItem, data1), ConfigToolsCom.Text); //ConfigExcel.ReadExl(selectedItem, data1);
 
                 AnalyFileSelectDataView.DataSource = _dataTable;
 

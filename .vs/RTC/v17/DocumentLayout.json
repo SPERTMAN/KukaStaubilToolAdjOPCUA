@@ -7,11 +7,27 @@
       "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\processfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\model\\configpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\configfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\configfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\configfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\configfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\processfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\processfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\historyfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\historyfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\rtc\\model\\configpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\model\\configpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|c:\\users\\moumou\\source\\repos\\kukastaubiltooladjopcua\\rtc\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\rtc\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B06D5A9C-79A2-4306-AA5D-7F03B4AFD47B}|RTC\\RTC.csproj|solutionrelative:rtc\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,8 +38,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigFrm.cs",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ConfigFrm.cs",
+              "RelativeDocumentMoniker": "RTC\\ConfigFrm.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ConfigFrm.cs",
+              "RelativeToolTip": "RTC\\ConfigFrm.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAApwCQAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:11:39.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcessFrm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ProcessFrm.cs",
+              "RelativeDocumentMoniker": "RTC\\ProcessFrm.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ProcessFrm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "RTC\\ProcessFrm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:11:26.887Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfigFrm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ConfigFrm.cs",
+              "RelativeDocumentMoniker": "RTC\\ConfigFrm.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ConfigFrm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "RTC\\ConfigFrm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:07:15.875Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoryFrm.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\HistoryFrm.cs",
+              "RelativeDocumentMoniker": "RTC\\HistoryFrm.cs",
+              "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\HistoryFrm.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "RTC\\HistoryFrm.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:07:09.283Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,14 +101,14 @@
               "RelativeDocumentMoniker": "RTC\\ProcessFrm.cs",
               "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\ProcessFrm.cs",
               "RelativeToolTip": "RTC\\ProcessFrm.cs",
-              "ViewState": "AQIAALMMAAAAAAAAAAAawOIMAAAAAAAA",
+              "ViewState": "AQIAAE4CAAAAAAAAAAAhwGUCAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T05:46:10.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ConfigPara.cs",
               "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\Model\\ConfigPara.cs",
               "RelativeDocumentMoniker": "RTC\\Model\\ConfigPara.cs",
@@ -47,20 +116,18 @@
               "RelativeToolTip": "RTC\\Model\\ConfigPara.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwBkAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:45:19.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T05:45:19.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MainFrm.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\MainFrm.cs",
               "RelativeDocumentMoniker": "RTC\\MainFrm.cs",
               "ToolTip": "C:\\Users\\moumou\\source\\repos\\KukaStaubilToolAdjOPCUA\\RTC\\MainFrm.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "RTC\\MainFrm.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:07:13.169Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2024-10-09T05:07:13.169Z"
             }
           ]
         }
