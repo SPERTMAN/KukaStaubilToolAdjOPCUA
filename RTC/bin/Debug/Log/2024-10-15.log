@@ -1,0 +1,152 @@
+2024-10-15 11:10:20---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 11:10:20---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 11:14:32---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 11:14:32---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 11:16:10---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 11:16:10---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:03:01---
+成功修改配置文件信息
+
+2024-10-15 13:03:01---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket()
+2024-10-15 13:04:02---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:04:02---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:08:52---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:08:52---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:09:45---
+成功修改配置文件信息
+
+2024-10-15 13:09:46---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:14:00---
+成功修改配置文件信息
+
+2024-10-15 13:14:00---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:16:38---
+成功修改配置文件信息
+
+2024-10-15 13:16:38---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:26:50---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:26:50---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:43:35---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:43:35---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:44:22---
+成功修改配置文件信息
+
+2024-10-15 13:44:22---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:46:27---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:46:27---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:46:59---
+成功修改配置文件信息
+
+2024-10-15 13:46:59---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:49:23---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:49:23---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 13:58:20---
+成功修改配置文件信息
+
+2024-10-15 13:58:20---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket()
+2024-10-15 14:01:59---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 14:01:59---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 14:03:17---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 14:03:17---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 14:04:38---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 14:04:38---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732
+2024-10-15 14:05:33---
+成功修改配置文件信息
+
+2024-10-15 14:05:37---DataSocketSystem.Net.Sockets.SocketException (0x80004005): 你的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer)
+   在 RTC.ProcessFrm.DataSocket() 位置 D:\锐博特\机器人\stnli\RTC\ProcessFrm.cs:行号 2732

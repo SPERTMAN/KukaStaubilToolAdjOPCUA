@@ -12,6 +12,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -243,9 +244,12 @@ namespace RTC
                     break;
             }
         }
+        //显示当前机器人数据
         private void ShowNowBtn_Click(object sender, EventArgs e)
         {
-           
+
+           // ConfigPara para = ConfigPara.DeepClone(_configPara);
+           // ConfigPara oldPara = ConfigPara.DeepClone(_configPara);
             _configPara = (RobotConfigFun.GetPara(_CurrentRobots));
             StaticCommonVar.RobotSelectName = "";
             UpdateControl();
@@ -310,11 +314,14 @@ namespace RTC
 
         }
 
+
+        //保存机器人数据
         private void RobotSaveBtn_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show($"是否保存机器人数据", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 ConfigPara para = ConfigPara.DeepClone(_configPara);
+                ConfigPara oldPara = ConfigPara.DeepClone(_configPara);
 
                 para.DataIP = LocalIpTxt.Text;
                 para.Robots.BU = BUTxt.Text;
@@ -403,13 +410,56 @@ namespace RTC
                //     ConfigExcel.WriteConfig(para);
                // }
                 string newName = para.Robots.BU + "_" + para.Robots.LineName + "_" + para.Robots.WorkName + "_" + para.Robots.RobotName + "_" + para.Robots.RobotSeriorNo;
-                File.Move(@"Config\"+CurrentDataLab.Text+".xml", @"Config\"+newName+".xml");
-
-                ConfigExcel.NewConfig(para,newName);
-               
+                //2024-10-15  File.Move报错所以增加文件是否存在的判断
+                string fullPath = @"Config\" + CurrentDataLab.Text + ".xml";
+                string fullPath2 = @"Config\" + newName + ".xml";
+              
+                //文件内容进行移动
+                 File.Move(@"Config\" + CurrentDataLab.Text + ".xml", @"Config\" + newName + ".xml");
+                 ConfigExcel.NewConfig(para, newName);
                 _configPara = (RobotConfigFun.GetPara(newName));
                 //StaticCommonVar.RobotName = newName;
                 UpdateControl();
+                // }
+                //移动之后进行换型
+                //获取当前修改之后的配置文件数据
+                ConfigPara changePara = RobotConfigFun.GetPara(newName.ToString());
+
+                if (para != null)
+                {
+                    ConfigExcel.WriteConfig(changePara);
+
+                    StaticCommonVar.RobotChangeOver = true;
+
+                    //更改IP地址
+                    IpFun.SetNetworkAdapter(changePara.DataIP, false, "255.255.255.0");
+
+                    Task.Run(() =>
+                    {
+                        while (true)
+                        {
+                            if (!StaticCommonVar.RobotChangeOver)
+                            {
+                                Thread.Sleep(100);
+                                Invoke(new Action(() =>
+                                {
+                                    MessageBox.Show($"{newName.ToString()}数据成功");
+
+                                }));
+                                return;
+                            }
+
+                        }
+
+                    });
+
+                }
+                else
+                {
+                    MessageBox.Show($"{newName.ToString()}数据修改失败");
+                }
+
+               
 
             }
         }

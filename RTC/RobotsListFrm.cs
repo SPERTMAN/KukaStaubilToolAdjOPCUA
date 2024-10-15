@@ -61,6 +61,8 @@ namespace RTC
             }
         }
 
+
+        //确认选择换型
         private void ChangeOverRobotBtn_Click(object sender, EventArgs e)
         {
             if (RobotsFileList.SelectedItem == null)

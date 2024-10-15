@@ -8,7 +8,7 @@
   <AdminPwd>service</AdminPwd>
   <ExeType>PCI</ExeType>
   <Robots>
-    <BU>TS</BU>
+    <BU>CA</BU>
     <LineName>TEST</LineName>
     <WorkName>ST0000</WorkName>
     <RobotType>kuka</RobotType>
@@ -18,7 +18,7 @@
     <RobotSeriorNo>504180</RobotSeriorNo>
     <RobotGipperNum>1</RobotGipperNum>
     <RobotStatNo>57</RobotStatNo>
-    <RobotName>实验室</RobotName>
+    <RobotName>实验室999</RobotName>
     <CircDiameter>53.1</CircDiameter>
     <AdjDownHeight>-18</AdjDownHeight>
     <AdjustmentZ>0</AdjustmentZ>
